@@ -1,0 +1,56 @@
+--------------
+How To Use:
+--------------
+Steps:
+1) Add Jquery
+2) Add jqeruy.highlightText.js
+3) Add jqeruy.highlightText.css
+
+
+
+-----------------------
+Structure to follow:
+-----------------------
+-DocumentId - Must have an ID, position:relative
+--Document Element - Must have a class, we need to pass it as value of document key.
+----Content (Avoid using HTML Tags.)
+
+
+
+---------------
+Integration:
+---------------
+Initialize the plugin as follow. Selector should be any wrapper element of all the documents.
+$('#documentWrapper').Highlighter()
+
+
+----------------
+Properties:
+----------------
+document - Need to pass a class which should be given to all elements that contains selectable text.
+highlightSelection - It should be boolean. Pass true if you want to get content highlighted (as selected) after text selection.
+onSelectionClick(highlightObject, e) - Callback function on clicking on highlighted (as selected) text. First argument is object of evidence/highlight and second is event.
+mouseup(selectedText, e) - Event is triggered on completing the selection. First argument is selected text object (having selected text, begin position and end position of the text in the document.)
+mousedown(e) - Event is triggered on starting the text selection. Only argument is event object.
+
+
+---------------
+API:
+----------------
+addEvidence(highlightObject, showOnDOM)
+- Option constains the highlight object.
+- showOnDOM should be true if you want to add evidence on DOM also, false will only add to the object.
+- Highlight Object needs:
+	- evidence - Text to Highlight.
+	- begin - Begin position of the highlight.
+	- name - evidence / selection.
+	- id - An Unique Id for Highlight.
+	- documentId - Document Id that contains the text.
+	- class - HTML Class which contains background color. (Ex. pink / yellow / blue),
+	- source - A unique source of the text. 
+	- click(option) - callback function.(optional)
+
+addAllDocEvidenceToDom()
+- It will display all the evidence on DOM.
+
+

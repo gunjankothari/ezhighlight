@@ -1,0 +1,14 @@
+{
+  "name": "ezHighlight",
+  "homepage": "https://github.com/GunjanMediscribes/ezhighlight",
+  "_release": "v1.04",
+  "_resolution": {
+    "type": "tag",
+    "tag": "v1.04",
+    "commit": "b58a44fb844e7d14691595ca1f1e3e61aeab2b90"
+  },
+  "_source": "https://github.com/GunjanMediscribes/ezhighlight.git",
+  "_target": "v1.04",
+  "_originalSource": "ezHighlight",
+  "_direct": true
+}

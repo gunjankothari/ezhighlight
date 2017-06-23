@@ -1,0 +1,100 @@
+.mian{
+    position: relative;
+}
+span._tmp_string {
+    background: #F9C3C3;
+    padding: 2px 7px;
+    cursor: pointer
+}
+
+span._code_string {
+    /* background: #BFEFFF;
+    color: #BFEFFF;
+     */
+    padding: 0 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Times New Roman;
+    pointer-events: none;
+    opacity: 0.5
+}
+
+._tmp_span {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.document-content-container {
+    z-index: 1;
+    line-height: 21px;
+}
+
+.evidence_list {
+    z-index: 0;
+}
+
+.evidence_list {
+    pointer-events: none;
+}
+
+.evidence_list code {
+    position: absolute;
+    left: 0;
+    /* height: 100%; */
+    padding: 0 0;
+    pointer-events: none;
+}
+
+.evidence_list code span {
+    pointer-events: all;
+}
+
+.evidence_list .yellow {
+    background: rgb(255, 248, 174) !important;
+    opacity: 1;
+    color: rgb(0, 0, 0);
+}
+
+.evidence_list .blue {
+    background: rgba(0, 191, 255, 0.5);
+    /*opacity: 1;*/
+    color: transparent;
+}
+
+.evidence_list .blue.underline {
+    border-bottom: 2px solid #0969A2;
+}
+
+.evidence_list .lightBlue {
+    background: rgba(107, 222, 249, 0.5);
+    /*opacity: 1;*/
+    color: transparent;
+}
+
+.evidence_list .lightBlue.underline {
+    border-bottom: 2px solid #0969A2;
+}
+
+.evidence_list .pink {
+    background: rgba(245, 97, 156, 0.5);
+    /*opacity: 1;*/
+    color: transparent;
+}
+
+.evidence_list .pink.underline {
+    border-bottom: 2px solid #8C0000;
+}
+
+.evidence_list code span {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+
+    /*
+      Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+}
